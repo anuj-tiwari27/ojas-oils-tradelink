@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FAF6EE; color: #25221C; font-family: 'Hanken Grotesk', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { text-decoration: none; color: inherit; }
+  input, select, textarea { font-family: inherit; }
+  input::placeholder, textarea::placeholder { color: #B0A893; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: #C0913A !important; box-shadow: 0 0 0 3px rgba(192,145,58,0.14); }
+  @keyframes ojasRise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</helmet>
+
+<div style="min-height:100%; background:#FAF6EE;">
+
+  <div style="background:#3A3328; color:#E9E0CE; font-size:13px; letter-spacing:0.02em;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div style="display:flex; align-items:center; gap:9px;">
+        <span style="width:7px; height:7px; border-radius:50%; background:#C0913A; display:inline-block;"></span>
+        <span style="opacity:0.85;">Trusted oil trading &amp; brokerage &middot; Est. 1993</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:22px; flex-wrap:wrap;">
+        <a href="tel:07514078670" style="display:flex; align-items:center; gap:7px; opacity:0.9;" style-hover="opacity:1; color:#E3C078;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          0751-4078670
+        </a>
+        <a href="/cdn-cgi/l/email-protection#badbc3cfc9d2898bd0cfd6faddd7dbd3d694d9d5d7" style="display:flex; align-items:center; gap:7px; opacity:0.9;" style-hover="opacity:1; color:#E3C078;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span class="__cf_email__" data-cfemail="5d3c24282e356e6c3728311d3a303c3431733e3230">[email&#160;protected]</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header ref="{{ navRef }}" style="position:sticky; top:0; z-index:50; background:rgba(250,246,238,0.92); backdrop-filter:blur(10px); border-bottom:1px solid #ECE3D2; transition:box-shadow .3s ease;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 28px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="Home.dc.html" style="display:flex; align-items:center; gap:12px;">
+        <span style="width:42px; height:42px; border-radius:50%; background:linear-gradient(150deg,#C0913A,#9C6F25); display:flex; align-items:center; justify-content:center; box-shadow:0 4px 14px rgba(156,111,37,0.28);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FAF6EE"><path d="M12 2C9 7 6 10.5 6 14.5A6 6 0 0 0 18 14.5C18 10.5 15 7 12 2Z"/></svg>
+        </span>
+        <span style="display:flex; flex-direction:column; line-height:1;">
+          <span style="font-family:'Marcellus',serif; font-size:21px; letter-spacing:0.04em; color:#25221C;">OJAS</span>
+          <span style="font-size:9.5px; letter-spacing:0.34em; color:#9A8E76; margin-top:3px;">OILS &amp; TRADELINK</span>
+        </span>
+      </a>
+      <nav style="display:flex; align-items:center; gap:34px;" data-desktop-nav>
+        <a href="Home.dc.html" style="font-size:15px; font-weight:500; color:#46402F;" style-hover="color:#C0913A;">Home</a>
+        <a href="About.dc.html" style="font-size:15px; font-weight:500; color:#46402F;" style-hover="color:#C0913A;">About</a>
+        <a href="Commodities.dc.html" style="font-size:15px; font-weight:500; color:#46402F;" style-hover="color:#C0913A;">Commodities</a>
+        <a href="Why-Us.dc.html" style="font-size:15px; font-weight:500; color:#46402F; white-space:nowrap;" style-hover="color:#C0913A;">Why Us</a>
+        <a href="Contact.dc.html" style="font-size:15px; font-weight:600; color:#C0913A;">Contact</a>
+        <a href="tel:07514078670" style="background:#4C5E40; color:#FAF6EE; font-size:14px; font-weight:600; padding:11px 22px; border-radius:40px; white-space:nowrap;" style-hover="background:#3C4B33;">Call Now</a>
+      </nav>
+      <button onClick="{{ toggleMobile }}" aria-label="Menu" style="display:none; background:none; border:1px solid #DBD0BC; border-radius:10px; padding:9px; cursor:pointer; color:#46402F;" data-mobile-btn>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top:1px solid #ECE3D2; padding:10px 28px 18px; display:flex; flex-direction:column; gap:4px; background:#FAF6EE;">
+        <a href="Home.dc.html" style="padding:11px 6px; font-weight:500; color:#46402F; border-bottom:1px solid #F0E8D8;">Home</a>
+        <a href="About.dc.html" style="padding:11px 6px; font-weight:500; color:#46402F; border-bottom:1px solid #F0E8D8;">About</a>
+        <a href="Commodities.dc.html" style="padding:11px 6px; font-weight:500; color:#46402F; border-bottom:1px solid #F0E8D8;">Commodities</a>
+        <a href="Why-Us.dc.html" style="padding:11px 6px; font-weight:500; color:#46402F; border-bottom:1px solid #F0E8D8;">Why Us</a>
+        <a href="Contact.dc.html" style="padding:11px 6px; font-weight:600; color:#C0913A;">Contact</a>
+      </div>
+    </sc-if>
+  </header>
+
+  <section data-screen-label="Contact header" style="position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(110% 90% at 92% 0%, #EFE3CB 0%, rgba(239,227,203,0) 55%), radial-gradient(90% 90% at 0% 100%, #E2E8D8 0%, rgba(226,232,216,0) 55%);"></div>
+    <div style="position:relative; max-width:1180px; margin:0 auto; padding:64px 28px 48px; animation:ojasRise .7s ease both;">
+      <div style="font-size:13px; color:#9A8E76; letter-spacing:0.04em;"><a href="Home.dc.html" style-hover="color:#C0913A;">Home</a> &nbsp;/&nbsp; <span style="color:#5C5648;">Contact</span></div>
+      <h1 style="font-family:'Marcellus',serif; font-weight:400; font-size:50px; line-height:1.1; margin:18px 0 0; color:#25221C; max-width:720px; text-wrap:balance;">Let's talk rates and requirements.</h1>
+      <p style="font-size:18px; line-height:1.65; color:#5C5648; margin:20px 0 0; max-width:600px;">Tell us what you're buying or selling. We'll come back with the market and the right counterparty — usually the same day.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Contact body" style="max-width:1180px; margin:0 auto; padding:24px 28px 84px;">
+    <div style="display:grid; grid-template-columns:1.25fr 0.75fr; gap:30px; align-items:start;" data-contact-grid>
+
+      <!-- Form card -->
+      <div style="background:#FFFDF8; border:1px solid #EBE2D1; border-radius:24px; padding:38px; box-shadow:0 14px 40px rgba(76,64,40,0.06);">
+        <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+          <div style="text-align:center; padding:40px 10px;">
+            <span style="width:74px; height:74px; border-radius:50%; background:#E2E8D8; display:inline-flex; align-items:center; justify-content:center; color:#4C5E40;">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+            <h2 style="font-family:'Marcellus',serif; font-weight:400; font-size:30px; margin:22px 0 0; color:#25221C;">Enquiry received — thank you.</h2>
+            <p style="font-size:16px; line-height:1.7; color:#5C5648; margin:12px auto 0; max-width:420px;">Our desk will get back to you shortly with the market and next steps. For anything urgent, call <a href="tel:07514078670" style="color:#C0913A; font-weight:600;">0751-4078670</a> or WhatsApp us.</p>
+            <button onClick="{{ resetForm }}" style="margin-top:26px; background:none; border:1.5px solid #C2CDB3; color:#3F4934; font-size:15px; font-weight:600; padding:12px 26px; border-radius:44px; cursor:pointer;" style-hover="background:#E7EDDD;">Send another enquiry</button>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+          <div>
+            <h2 style="font-family:'Marcellus',serif; font-weight:400; font-size:26px; margin:0; color:#25221C;">Send an enquiry</h2>
+            <p style="font-size:14.5px; color:#8A8270; margin:6px 0 0;">Fields marked <span style="color:#C0913A;">*</span> are required.</p>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:26px;" data-field-row>
+              <label style="display:flex; flex-direction:column; gap:7px;">
+                <span style="font-size:13px; font-weight:600; color:#46402F;">Full name <span style="color:#C0913A;">*</span></span>
+                <input name="name" value="{{ form.name }}" onChange="{{ handleChange }}" placeholder="Your name" style="border:1.5px solid #E2D8C5; background:#FFFEFB; border-radius:12px; padding:13px 15px; font-size:15px; color:#25221C; transition:border-color .2s, box-shadow .2s;">
+              </label>
+              <label style="display:flex; flex-direction:column; gap:7px;">
+                <span style="font-size:13px; font-weight:600; color:#46402F;">Company</span>
+                <input name="company" value="{{ form.company }}" onChange="{{ handleChange }}" placeholder="Company / firm" style="border:1.5px solid #E2D8C5; background:#FFFEFB; border-radius:12px; padding:13px 15px; font-size:15px; color:#25221C; transition:border-color .2s, box-shadow .2s;">
+              </label>
+              <label style="display:flex; flex-direction:column; gap:7px;">
+                <span style="font-size:13px; font-weight:600; color:#46402F;">Phone <span style="color:#C0913A;">*</span></span>
+                <input name="phone" value="{{ form.phone }}" onChange="{{ handleChange }}" placeholder="Mobile number" style="border:1.5px solid #E2D8C5; background:#FFFEFB; border-radius:12px; padding:13px 15px; font-size:15px; color:#25221C; transition:border-color .2s, box-shadow .2s;">
+              </label>
+              <label style="display:flex; flex-direction:column; gap:7px;">
+                <span style="font-size:13px; font-weight:600; color:#46402F;">Email</span>
+                <input name="email" value="{{ form.email }}" onChange="{{ handleChange }}" placeholder="you@email.com" style="border:1.5px solid #E2D8C5; background:#FFFEFB; border-radius:12px; padding:13px 15px; font-size:15px; color:#25221C; transition:border-color .2s, box-shadow .2s;">
+              </label>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;" data-field-row>
+              <label style="display:flex; flex-direction:column; gap:7px;">
+                <span style="font-size:13px; font-weight:600; color:#46402F;">Commodity <span style="color:#C0913A;">*</span></span>
+                <select name="commodity" value="{{ form.commodity }}" onChange="{{ handleChange }}" style="border:1.5px solid #E2D8C5; background:#FFFEFB; border-radius:12px; padding:13px 15px; font-size:15px; color:#25221C; transition:border-color .2s, box-shadow .2s; cursor:pointer;">
+                  <option value="">Select a commodity</option>
+                  <option value="Soybean Refined Oil (SRO)">Soybean Refined Oil (SRO)</option>
+                  <option value="Soybean Degummed Oil (SDO)">Soybean Degummed Oil (SDO)</option>
+                  <option value="Crude Degummed Soybean Oil (CDSBO)">Crude Degummed Soybean Oil (CDSBO)</option>
+                  <option value="De-Oiled Cake (DOC)">De-Oiled Cake (DOC)</option>
+                  <option value="Mustard Deoiled Cake">Mustard Deoiled Cake</option>
+                  <option value="Mustard Seed (Sarso)">Mustard Seed (Sarso)</option>
+                  <option value="Cake Sarso">Cake Sarso</option>
+                  <option value="Kachi Ghani Mustard Oil">Kachi Ghani Mustard Oil</option>
+                  <option value="Other / Multiple">Other / Multiple</option>
+                </select>
+              </label>
+              <label style="display:flex; flex-direction:column; gap:7px;">
+                <span style="font-size:13px; font-weight:600; color:#46402F;">Approx. quantity</span>
+                <input name="qty" value="{{ form.qty }}" onChange="{{ handleChange }}" placeholder="e.g. 25 MT" style="border:1.5px solid #E2D8C5; background:#FFFEFB; border-radius:12px; padding:13px 15px; font-size:15px; color:#25221C; transition:border-color .2s, box-shadow .2s;">
+              </label>
+            </div>
+
+            <div style="margin-top:18px;">
+              <span style="font-size:13px; font-weight:600; color:#46402F;">I want to</span>
+              <div style="display:flex; gap:10px; margin-top:9px;">
+                <button onClick="{{ setBuy }}" style="{{ buyStyle }}">Buy</button>
+                <button onClick="{{ setSell }}" style="{{ sellStyle }}">Sell</button>
+                <button onClick="{{ setEither }}" style="{{ eitherStyle }}">Either / Enquire</button>
+              </div>
+            </div>
+
+            <label style="display:flex; flex-direction:column; gap:7px; margin-top:18px;">
+              <span style="font-size:13px; font-weight:600; color:#46402F;">Message</span>
+              <textarea name="message" value="{{ form.message }}" onChange="{{ handleChange }}" rows="4" placeholder="Tell us about grade, delivery location, timeline, or any other detail." style="border:1.5px solid #E2D8C5; background:#FFFEFB; border-radius:12px; padding:13px 15px; font-size:15px; color:#25221C; resize:vertical; transition:border-color .2s, box-shadow .2s;"></textarea>
+            </label>
+
+            <sc-if value="{{ error }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:16px; background:#F8E6DC; border:1px solid #E8C3AC; color:#9A4A22; font-size:14px; padding:12px 16px; border-radius:12px;">{{ error }}</div>
+            </sc-if>
+
+            <button onClick="{{ handleSubmit }}" style="margin-top:24px; width:100%; background:#C0913A; color:#FFFBF2; font-size:16px; font-weight:700; padding:16px; border:none; border-radius:44px; cursor:pointer; box-shadow:0 10px 26px rgba(192,145,58,0.3); transition:background .2s;" style-hover="background:#A87C2B;">Submit Enquiry</button>
+            <p style="font-size:12.5px; color:#9A8E76; text-align:center; margin:14px 0 0;">We'll never share your details. Typical response: same business day.</p>
+          </div>
+        </sc-if>
+      </div>
+
+      <!-- Details -->
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div style="background:#2F2A20; color:#F0E8D8; border-radius:22px; padding:30px;">
+          <h3 style="font-family:'Marcellus',serif; font-weight:400; font-size:22px; margin:0; color:#FBF6EC;">Reach the desk</h3>
+          <div style="display:flex; flex-direction:column; gap:18px; margin-top:22px;">
+            <a href="tel:07514078670" style="display:flex; gap:14px; align-items:flex-start;" style-hover="color:#E3C078;">
+              <span style="width:40px; height:40px; flex:none; border-radius:11px; background:rgba(227,192,120,0.14); display:flex; align-items:center; justify-content:center; color:#E3C078;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <span><span style="font-size:12px; letter-spacing:0.08em; color:#9A8E76; display:block;">PHONE</span><span style="font-size:15.5px; font-weight:600;">0751-4078670</span><br><span style="font-size:15.5px; font-weight:600;">0751-4076634</span></span>
+            </a>
+            <a href="/cdn-cgi/l/email-protection#9ffee6eaecf7acaef5eaf3dff8f2fef6f3b1fcf0f2" style="display:flex; gap:14px; align-items:flex-start;" style-hover="color:#E3C078;">
+              <span style="width:40px; height:40px; flex:none; border-radius:11px; background:rgba(227,192,120,0.14); display:flex; align-items:center; justify-content:center; color:#E3C078;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span><span style="font-size:12px; letter-spacing:0.08em; color:#9A8E76; display:block;">EMAIL</span><span style="font-size:15.5px; font-weight:600;"><span class="__cf_email__" data-cfemail="9ffee6eaecf7acaef5eaf3dff8f2fef6f3b1fcf0f2">[email&#160;protected]</span></span></span>
+            </a>
+            <a href="https://wa.me/919425781805" target="_blank" style="display:flex; gap:14px; align-items:flex-start;" style-hover="color:#E3C078;">
+              <span style="width:40px; height:40px; flex:none; border-radius:11px; background:rgba(37,211,102,0.16); display:flex; align-items:center; justify-content:center; color:#3FD17A;"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zM12.04 20.15c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.24-8.21 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg></span>
+              <span><span style="font-size:12px; letter-spacing:0.08em; color:#9A8E76; display:block;">WHATSAPP</span><span style="font-size:15.5px; font-weight:600;">+91 94257 81805</span></span>
+            </a>
+            <div style="display:flex; gap:14px; align-items:flex-start;">
+              <span style="width:40px; height:40px; flex:none; border-radius:11px; background:rgba(227,192,120,0.14); display:flex; align-items:center; justify-content:center; color:#E3C078;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span><span style="font-size:12px; letter-spacing:0.08em; color:#9A8E76; display:block;">OFFICE</span><span style="font-size:15.5px; font-weight:600;">Gwalior, Madhya Pradesh, India</span></span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FFFDF8; border:1px solid #EBE2D1; border-radius:22px; padding:26px 30px;">
+          <div style="display:flex; align-items:center; gap:10px; color:#4C5E40;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.08em; color:#9A8E76;">TRADING HOURS</span>
+          </div>
+          <div style="margin-top:16px; display:flex; flex-direction:column; gap:9px; font-size:14.5px; color:#46402F;">
+            <div style="display:flex; justify-content:space-between;"><span>Monday – Saturday</span><span style="font-weight:600;">10:00 – 18:30</span></div>
+            <div style="display:flex; justify-content:space-between; color:#8A8270;"><span>Sunday</span><span>Closed</span></div>
+          </div>
+          <div style="margin-top:18px; padding-top:16px; border-top:1px solid #F0E8D8; font-size:13.5px; color:#736C5B; line-height:1.6;">Market enquiries are welcome anytime — leave a message or WhatsApp and we'll respond promptly.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#26221A; color:#C9BFA8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 28px 30px;">
+      <div style="display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:44px;" data-footer-grid>
+        <div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="width:42px; height:42px; border-radius:50%; background:linear-gradient(150deg,#C0913A,#9C6F25); display:flex; align-items:center; justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#FAF6EE"><path d="M12 2C9 7 6 10.5 6 14.5A6 6 0 0 0 18 14.5C18 10.5 15 7 12 2Z"/></svg>
+            </span>
+            <span style="display:flex; flex-direction:column; line-height:1;">
+              <span style="font-family:'Marcellus',serif; font-size:20px; letter-spacing:0.04em; color:#FBF6EC;">OJAS</span>
+              <span style="font-size:9px; letter-spacing:0.32em; color:#8A7E66; margin-top:3px;">OILS &amp; TRADELINK</span>
+            </span>
+          </div>
+          <p style="font-size:14.5px; line-height:1.7; margin:20px 0 0; color:#A89E87; max-width:300px;">Specialist oil trading &amp; brokerage in the soybean and mustard complex. Trusted by the trade since 1993.</p>
+          <div style="display:inline-flex; align-items:center; gap:8px; margin-top:20px; background:rgba(227,192,120,0.12); border:1px solid rgba(227,192,120,0.25); padding:8px 14px; border-radius:30px; font-size:12.5px; font-weight:600; color:#E3C078; letter-spacing:0.04em;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            32+ Years of Experience
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; color:#8A7E66;">EXPLORE</div>
+          <div style="display:flex; flex-direction:column; gap:11px; margin-top:18px; font-size:14.5px;">
+            <a href="Home.dc.html" style-hover="color:#E3C078;">Home</a>
+            <a href="About.dc.html" style-hover="color:#E3C078;">About Us</a>
+            <a href="Commodities.dc.html" style-hover="color:#E3C078;">Commodities</a>
+            <a href="Why-Us.dc.html" style-hover="color:#E3C078;">Why Us</a>
+            <a href="Contact.dc.html" style-hover="color:#E3C078;">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; color:#8A7E66;">COMMODITIES</div>
+          <div style="display:flex; flex-direction:column; gap:11px; margin-top:18px; font-size:14.5px;">
+            <span>Soybean Refined Oil</span>
+            <span>Crude Degummed Soy Oil</span>
+            <span>De-Oiled Cake</span>
+            <span>Mustard Seed &amp; Cake</span>
+            <span>Kachi Ghani Oil</span>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; color:#8A7E66;">GET IN TOUCH</div>
+          <div style="display:flex; flex-direction:column; gap:13px; margin-top:18px; font-size:14.5px;">
+            <a href="tel:07514078670" style="display:flex; align-items:center; gap:10px;" style-hover="color:#E3C078;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              0751-4078670 / 4076634</a>
+            <a href="/cdn-cgi/l/email-protection#0b6a727e7863383a617e674b6c666a626725686466" style="display:flex; align-items:center; gap:10px;" style-hover="color:#E3C078;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span class="__cf_email__" data-cfemail="e6879f93958ed5d78c938aa6818b878f8ac885898b">[email&#160;protected]</span></a>
+            <a href="https://wa.me/919425781805" target="_blank" style="display:flex; align-items:center; gap:10px;" style-hover="color:#E3C078;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zM12.04 20.15c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.24-8.21 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+              +91 94257 81805</a>
+            <span style="display:flex; align-items:flex-start; gap:10px; color:#A89E87;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-top:2px; flex:none;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Gwalior, Madhya Pradesh, India</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:46px; padding-top:24px; border-top:1px solid rgba(201,191,168,0.16); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:13px; color:#8A7E66;">
+        <span>&copy; 2026 Ojas Oils &amp; Tradelink. All rights reserved.</span>
+        <span>Soybean &amp; Mustard Complex &middot; Trading &amp; Brokerage</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919425781805" target="_blank" aria-label="Chat on WhatsApp" style="position:fixed; right:24px; bottom:24px; z-index:60; width:58px; height:58px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 28px rgba(37,211,102,0.45);" style-hover="transform:scale(1.07);">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zM12.04 20.15c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.24-8.21 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+  </a>
+
+</div>
+</x-dc>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    mobileOpen: false, submitted: false, error: '',
+    form: { name: '', company: '', phone: '', email: '', commodity: '', qty: '', side: 'either', message: '' }
+  };
+  navRef = React.createRef();
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const el = this.navRef.current; if (!el) return;
+      if (window.scrollY > 8) { el.style.boxShadow = '0 8px 30px rgba(76,64,40,0.10)'; el.style.background = 'rgba(250,246,238,0.97)'; }
+      else { el.style.boxShadow = 'none'; el.style.background = 'rgba(250,246,238,0.92)'; }
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll(); this._applyResponsive();
+    window.addEventListener('resize', this._applyResponsive);
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); window.removeEventListener('resize', this._applyResponsive); }
+  _applyResponsive = () => {
+    const doc = document; const w = window.innerWidth;
+    const desk = doc.querySelector('[data-desktop-nav]'); const mob = doc.querySelector('[data-mobile-btn]');
+    if (desk && mob) { if (w < 900) { desk.style.display = 'none'; mob.style.display = 'flex'; } else { desk.style.display = 'flex'; mob.style.display = 'none'; } }
+    doc.querySelectorAll('[data-contact-grid]').forEach(e => { e.style.gridTemplateColumns = w < 880 ? '1fr' : '1.25fr 0.75fr'; });
+    doc.querySelectorAll('[data-field-row]').forEach(e => { e.style.gridTemplateColumns = w < 520 ? '1fr' : '1fr 1fr'; });
+    doc.querySelectorAll('[data-footer-grid]').forEach(e => { e.style.gridTemplateColumns = w < 700 ? '1fr 1fr' : '1.4fr 1fr 1fr 1.2fr'; });
+  };
+
+  toggleMobile = () => this.setState(s => ({ mobileOpen: !s.mobileOpen }));
+  handleChange = (e) => { const { name, value } = e.target; this.setState(s => ({ form: { ...s.form, [name]: value }, error: '' })); };
+  setSide = (side) => this.setState(s => ({ form: { ...s.form, side } }));
+  setBuy = () => this.setSide('buy');
+  setSell = () => this.setSide('sell');
+  setEither = () => this.setSide('either');
+  resetForm = () => this.setState({ submitted: false, error: '', form: { name: '', company: '', phone: '', email: '', commodity: '', qty: '', side: 'either', message: '' } });
+
+  handleSubmit = () => {
+    const f = this.state.form;
+    if (!f.name.trim()) return this.setState({ error: 'Please enter your name.' });
+    if (!f.phone.trim()) return this.setState({ error: 'Please enter a phone number so we can reach you.' });
+    if (!f.commodity) return this.setState({ error: 'Please select the commodity you want to trade.' });
+    this.setState({ submitted: true, error: '' });
+  };
+
+  _segStyle(active) {
+    const base = 'flex:1; text-align:center; font-size:14px; font-weight:600; padding:11px 8px; border-radius:12px; cursor:pointer; transition:all .18s; border:1.5px solid ';
+    return active
+      ? base + '#4C5E40; background:#4C5E40; color:#FAF6EE;'
+      : base + '#E2D8C5; background:#FFFEFB; color:#5C5648;';
+  }
+
+  renderVals() {
+    const f = this.state.form;
+    return {
+      mobileOpen: this.state.mobileOpen, toggleMobile: this.toggleMobile, navRef: this.navRef,
+      submitted: this.state.submitted, notSubmitted: !this.state.submitted,
+      error: this.state.error,
+      form: f,
+      handleChange: this.handleChange, handleSubmit: this.handleSubmit, resetForm: this.resetForm,
+      setBuy: this.setBuy, setSell: this.setSell, setEither: this.setEither,
+      buyStyle: this._segStyle(f.side === 'buy'),
+      sellStyle: this._segStyle(f.side === 'sell'),
+      eitherStyle: this._segStyle(f.side === 'either')
+    };
+  }
+}
+</script>
+</body>
+</html>

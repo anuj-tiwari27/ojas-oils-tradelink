@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FAF6EE; color: #25221C; font-family: 'Hanken Grotesk', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { text-decoration: none; color: inherit; }
+  @keyframes ojasRise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</helmet>
+
+<div style="min-height:100%; background:#FAF6EE;">
+
+  <div style="background:#3A3328; color:#E9E0CE; font-size:13px; letter-spacing:0.02em;">
+    <div style="max-width:1180px; margin:0 auto; padding:9px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div style="display:flex; align-items:center; gap:9px;">
+        <span style="width:7px; height:7px; border-radius:50%; background:#C0913A; display:inline-block;"></span>
+        <span style="opacity:0.85;">Trusted oil trading &amp; brokerage &middot; Est. 1993</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:22px; flex-wrap:wrap;">
+        <a href="tel:07514078670" style="display:flex; align-items:center; gap:7px; opacity:0.9;" style-hover="opacity:1; color:#E3C078;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          0751-4078670
+        </a>
+        <a href="/cdn-cgi/l/email-protection#05647c70766d36346f7069456268646c692b666a68" style="display:flex; align-items:center; gap:7px; opacity:0.9;" style-hover="opacity:1; color:#E3C078;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span class="__cf_email__" data-cfemail="14756d61677c27257e6178547379757d783a777b79">[email&#160;protected]</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header ref="{{ navRef }}" style="position:sticky; top:0; z-index:50; background:rgba(250,246,238,0.92); backdrop-filter:blur(10px); border-bottom:1px solid #ECE3D2; transition:box-shadow .3s ease;">
+    <div style="max-width:1180px; margin:0 auto; padding:16px 28px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="Home.dc.html" style="display:flex; align-items:center; gap:12px;">
+        <span style="width:42px; height:42px; border-radius:50%; background:linear-gradient(150deg,#C0913A,#9C6F25); display:flex; align-items:center; justify-content:center; box-shadow:0 4px 14px rgba(156,111,37,0.28);">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FAF6EE"><path d="M12 2C9 7 6 10.5 6 14.5A6 6 0 0 0 18 14.5C18 10.5 15 7 12 2Z"/></svg>
+        </span>
+        <span style="display:flex; flex-direction:column; line-height:1;">
+          <span style="font-family:'Marcellus',serif; font-size:21px; letter-spacing:0.04em; color:#25221C;">OJAS</span>
+          <span style="font-size:9.5px; letter-spacing:0.34em; color:#9A8E76; margin-top:3px;">OILS &amp; TRADELINK</span>
+        </span>
+      </a>
+      <nav style="display:flex; align-items:center; gap:34px;" data-desktop-nav>
+        <a href="Home.dc.html" style="font-size:15px; font-weight:500; color:#46402F;" style-hover="color:#C0913A;">Home</a>
+        <a href="About.dc.html" style="font-size:15px; font-weight:500; color:#46402F;" style-hover="color:#C0913A;">About</a>
+        <a href="Commodities.dc.html" style="font-size:15px; font-weight:600; color:#C0913A;">Commodities</a>
+        <a href="Why-Us.dc.html" style="font-size:15px; font-weight:500; color:#46402F; white-space:nowrap;" style-hover="color:#C0913A;">Why Us</a>
+        <a href="Contact.dc.html" style="font-size:15px; font-weight:500; color:#46402F;" style-hover="color:#C0913A;">Contact</a>
+        <a href="Contact.dc.html" style="background:#4C5E40; color:#FAF6EE; font-size:14px; font-weight:600; padding:11px 22px; border-radius:40px; white-space:nowrap;" style-hover="background:#3C4B33;">Enquire Now</a>
+      </nav>
+      <button onClick="{{ toggleMobile }}" aria-label="Menu" style="display:none; background:none; border:1px solid #DBD0BC; border-radius:10px; padding:9px; cursor:pointer; color:#46402F;" data-mobile-btn>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top:1px solid #ECE3D2; padding:10px 28px 18px; display:flex; flex-direction:column; gap:4px; background:#FAF6EE;">
+        <a href="Home.dc.html" style="padding:11px 6px; font-weight:500; color:#46402F; border-bottom:1px solid #F0E8D8;">Home</a>
+        <a href="About.dc.html" style="padding:11px 6px; font-weight:500; color:#46402F; border-bottom:1px solid #F0E8D8;">About</a>
+        <a href="Commodities.dc.html" style="padding:11px 6px; font-weight:600; color:#C0913A; border-bottom:1px solid #F0E8D8;">Commodities</a>
+        <a href="Why-Us.dc.html" style="padding:11px 6px; font-weight:500; color:#46402F; border-bottom:1px solid #F0E8D8;">Why Us</a>
+        <a href="Contact.dc.html" style="padding:11px 6px; font-weight:500; color:#46402F;">Contact</a>
+        <a href="Contact.dc.html" style="margin-top:10px; text-align:center; background:#4C5E40; color:#FAF6EE; font-weight:600; padding:12px; border-radius:40px;">Enquire Now</a>
+      </div>
+    </sc-if>
+  </header>
+
+  <section data-screen-label="Commodities header" style="position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; background:radial-gradient(110% 90% at 92% 0%, #EFE3CB 0%, rgba(239,227,203,0) 55%), radial-gradient(90% 90% at 0% 100%, #E2E8D8 0%, rgba(226,232,216,0) 55%);"></div>
+    <div style="position:relative; max-width:1180px; margin:0 auto; padding:64px 28px 52px; animation:ojasRise .7s ease both;">
+      <div style="font-size:13px; color:#9A8E76; letter-spacing:0.04em;"><a href="Home.dc.html" style-hover="color:#C0913A;">Home</a> &nbsp;/&nbsp; <span style="color:#5C5648;">Commodities</span></div>
+      <h1 style="font-family:'Marcellus',serif; font-weight:400; font-size:50px; line-height:1.1; margin:18px 0 0; color:#25221C; max-width:760px; text-wrap:balance;">What we trade across the soybean &amp; mustard complex.</h1>
+      <p style="font-size:18px; line-height:1.65; color:#5C5648; margin:20px 0 0; max-width:620px;">From crude and refined oils to meals, cakes, seed, and traditional ghani oil — eight commodities, brokered on one trusted desk.</p>
+      <div style="display:flex; align-items:center; gap:10px 14px; margin-top:26px; flex-wrap:wrap;">
+        <span style="display:inline-flex; align-items:center; gap:8px; background:#F3E7C9; color:#8A6716; padding:7px 14px; border-radius:30px; font-size:13px; font-weight:600;"><span style="width:8px;height:8px;border-radius:50%;background:#C0913A;"></span>Edible &amp; Crude Oils</span>
+        <span style="display:inline-flex; align-items:center; gap:8px; background:#E2E8D8; color:#4C5E40; padding:7px 14px; border-radius:30px; font-size:13px; font-weight:600;"><span style="width:8px;height:8px;border-radius:50%;background:#6E8757;"></span>Meals &amp; Cakes</span>
+        <span style="display:inline-flex; align-items:center; gap:8px; background:#EFE7D6; color:#7A6B45; padding:7px 14px; border-radius:30px; font-size:13px; font-weight:600;"><span style="width:8px;height:8px;border-radius:50%;background:#A88A4A;"></span>Oilseed</span>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Commodities list" style="max-width:1180px; margin:0 auto; padding:24px 28px 80px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:22px;" data-detail-grid>
+      <sc-for list="{{ commodities }}" as="c" hint-placeholder-count="8">
+        <div style="background:#FFFDF8; border:1px solid #EBE2D1; border-radius:22px; padding:30px; transition:box-shadow .25s ease, transform .25s ease, border-color .25s ease;" style-hover="box-shadow:0 20px 44px rgba(76,64,40,0.12); transform:translateY(-4px); border-color:#E0CFA4;">
+          <div style="display:flex; align-items:center; gap:18px;">
+            <sc-if value="{{ c.isOil }}" hint-placeholder-val="{{ true }}">
+              <span style="width:66px; height:66px; flex:none; border-radius:16px; background:linear-gradient(150deg,#F3E7C9,#E6D2A0); display:flex; align-items:center; justify-content:center; color:#8A6716;">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C9 7 6 10.5 6 14.5A6 6 0 0 0 18 14.5C18 10.5 15 7 12 2Z"/></svg>
+              </span>
+            </sc-if>
+            <sc-if value="{{ c.isMeal }}" hint-placeholder-val="{{ false }}">
+              <span style="width:66px; height:66px; flex:none; border-radius:16px; background:linear-gradient(150deg,#E2E8D8,#CCDABA); display:flex; align-items:center; justify-content:center; color:#4C5E40;">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 16l9 5 9-5"/></svg>
+              </span>
+            </sc-if>
+            <sc-if value="{{ c.isSeed }}" hint-placeholder-val="{{ false }}">
+              <span style="width:66px; height:66px; flex:none; border-radius:16px; background:linear-gradient(150deg,#EFE7D6,#DDCDA8); display:flex; align-items:center; justify-content:center; color:#7A6B45;">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21v-9"/><path d="M12 12c0-3.3 2.7-6 6-6 0 3.3-2.7 6-6 6z"/><path d="M12 13c0-2.8-2.2-5-5-5 0 2.8 2.2 5 5 5z"/></svg>
+              </span>
+            </sc-if>
+            <div>
+              <span style="font-size:11px; font-weight:700; letter-spacing:0.08em; color:#5E7649; background:#E2E8D8; padding:5px 11px; border-radius:30px;">{{ c.tag }}</span>
+              <h3 style="font-family:'Marcellus',serif; font-weight:400; font-size:22px; margin:10px 0 0; color:#25221C; line-height:1.2;">{{ c.name }}</h3>
+            </div>
+          </div>
+          <p style="font-size:14.5px; line-height:1.7; color:#5C5648; margin:18px 0 0;">{{ c.desc }}</p>
+          <div style="display:flex; flex-direction:column; gap:0; margin-top:20px; border-top:1px solid #F0E8D8;">
+            <div style="display:flex; gap:14px; padding:11px 0; border-bottom:1px solid #F4EDDD;">
+              <span style="font-size:12.5px; font-weight:700; letter-spacing:0.04em; color:#9A8E76; width:96px; flex:none;">FORM</span>
+              <span style="font-size:13.5px; color:#46402F;">{{ c.form }}</span>
+            </div>
+            <div style="display:flex; gap:14px; padding:11px 0; border-bottom:1px solid #F4EDDD;">
+              <span style="font-size:12.5px; font-weight:700; letter-spacing:0.04em; color:#9A8E76; width:96px; flex:none;">USES</span>
+              <span style="font-size:13.5px; color:#46402F;">{{ c.uses }}</span>
+            </div>
+            <div style="display:flex; gap:14px; padding:11px 0;">
+              <span style="font-size:12.5px; font-weight:700; letter-spacing:0.04em; color:#9A8E76; width:96px; flex:none;">TRADE BASIS</span>
+              <span style="font-size:13.5px; color:#46402F;">{{ c.basis }}</span>
+            </div>
+          </div>
+          <a href="Contact.dc.html" style="display:inline-flex; align-items:center; gap:8px; margin-top:18px; color:#4C5E40; font-weight:700; font-size:14px;" style-hover="gap:13px; color:#C0913A;">Enquire about {{ c.short }}
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="background:#2F2A20; color:#F0E8D8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 28px; display:flex; align-items:center; justify-content:space-between; gap:36px; flex-wrap:wrap;">
+      <div style="max-width:560px;">
+        <h2 style="font-family:'Marcellus',serif; font-weight:400; font-size:32px; line-height:1.25; color:#FBF6EC; margin:0;">Need a grade or quantity not listed here?</h2>
+        <p style="font-size:16px; line-height:1.7; color:#C9BFA8; margin:14px 0 0;">Our network runs deep across the complex. Tell us what you need — we'll source it.</p>
+      </div>
+      <a href="Contact.dc.html" style="background:#E3C078; color:#3A2E10; font-size:16px; font-weight:700; padding:15px 32px; border-radius:44px; white-space:nowrap;" style-hover="background:#D8B25F;">Talk to a Broker</a>
+    </div>
+  </section>
+
+  <footer style="background:#26221A; color:#C9BFA8;">
+    <div style="max-width:1180px; margin:0 auto; padding:64px 28px 30px;">
+      <div style="display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:44px;" data-footer-grid>
+        <div>
+          <div style="display:flex; align-items:center; gap:12px;">
+            <span style="width:42px; height:42px; border-radius:50%; background:linear-gradient(150deg,#C0913A,#9C6F25); display:flex; align-items:center; justify-content:center;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#FAF6EE"><path d="M12 2C9 7 6 10.5 6 14.5A6 6 0 0 0 18 14.5C18 10.5 15 7 12 2Z"/></svg>
+            </span>
+            <span style="display:flex; flex-direction:column; line-height:1;">
+              <span style="font-family:'Marcellus',serif; font-size:20px; letter-spacing:0.04em; color:#FBF6EC;">OJAS</span>
+              <span style="font-size:9px; letter-spacing:0.32em; color:#8A7E66; margin-top:3px;">OILS &amp; TRADELINK</span>
+            </span>
+          </div>
+          <p style="font-size:14.5px; line-height:1.7; margin:20px 0 0; color:#A89E87; max-width:300px;">Specialist oil trading &amp; brokerage in the soybean and mustard complex. Trusted by the trade since 1993.</p>
+          <div style="display:inline-flex; align-items:center; gap:8px; margin-top:20px; background:rgba(227,192,120,0.12); border:1px solid rgba(227,192,120,0.25); padding:8px 14px; border-radius:30px; font-size:12.5px; font-weight:600; color:#E3C078; letter-spacing:0.04em;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            32+ Years of Experience
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; color:#8A7E66;">EXPLORE</div>
+          <div style="display:flex; flex-direction:column; gap:11px; margin-top:18px; font-size:14.5px;">
+            <a href="Home.dc.html" style-hover="color:#E3C078;">Home</a>
+            <a href="About.dc.html" style-hover="color:#E3C078;">About Us</a>
+            <a href="Commodities.dc.html" style-hover="color:#E3C078;">Commodities</a>
+            <a href="Why-Us.dc.html" style-hover="color:#E3C078;">Why Us</a>
+            <a href="Contact.dc.html" style-hover="color:#E3C078;">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; color:#8A7E66;">COMMODITIES</div>
+          <div style="display:flex; flex-direction:column; gap:11px; margin-top:18px; font-size:14.5px;">
+            <span>Soybean Refined Oil</span>
+            <span>Crude Degummed Soy Oil</span>
+            <span>De-Oiled Cake</span>
+            <span>Mustard Seed &amp; Cake</span>
+            <span>Kachi Ghani Oil</span>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; color:#8A7E66;">GET IN TOUCH</div>
+          <div style="display:flex; flex-direction:column; gap:13px; margin-top:18px; font-size:14.5px;">
+            <a href="tel:07514078670" style="display:flex; align-items:center; gap:10px;" style-hover="color:#E3C078;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              0751-4078670 / 4076634</a>
+            <a href="/cdn-cgi/l/email-protection#a6c7dfd3d5ce9597ccd3cae6c1cbc7cfca88c5c9cb" style="display:flex; align-items:center; gap:10px;" style-hover="color:#E3C078;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span class="__cf_email__" data-cfemail="b7d6cec2c4df8486ddc2dbf7d0dad6dedb99d4d8da">[email&#160;protected]</span></a>
+            <a href="https://wa.me/919425781805" target="_blank" style="display:flex; align-items:center; gap:10px;" style-hover="color:#E3C078;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zM12.04 20.15c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.24-8.21 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+              +91 94257 81805</a>
+            <span style="display:flex; align-items:flex-start; gap:10px; color:#A89E87;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="margin-top:2px; flex:none;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Gwalior, Madhya Pradesh, India</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:46px; padding-top:24px; border-top:1px solid rgba(201,191,168,0.16); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:13px; color:#8A7E66;">
+        <span>&copy; 2026 Ojas Oils &amp; Tradelink. All rights reserved.</span>
+        <span>Soybean &amp; Mustard Complex &middot; Trading &amp; Brokerage</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919425781805" target="_blank" aria-label="Chat on WhatsApp" style="position:fixed; right:24px; bottom:24px; z-index:60; width:58px; height:58px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 28px rgba(37,211,102,0.45);" style-hover="transform:scale(1.07);">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M19.05 4.91A9.816 9.816 0 0012.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zM12.04 20.15c-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c.02 4.54-3.68 8.24-8.21 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+  </a>
+
+</div>
+</x-dc>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { mobileOpen: false };
+  navRef = React.createRef();
+  componentDidMount() {
+    this._onScroll = () => {
+      const el = this.navRef.current; if (!el) return;
+      if (window.scrollY > 8) { el.style.boxShadow = '0 8px 30px rgba(76,64,40,0.10)'; el.style.background = 'rgba(250,246,238,0.97)'; }
+      else { el.style.boxShadow = 'none'; el.style.background = 'rgba(250,246,238,0.92)'; }
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll(); this._applyResponsive();
+    window.addEventListener('resize', this._applyResponsive);
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); window.removeEventListener('resize', this._applyResponsive); }
+  _applyResponsive = () => {
+    const doc = document; const w = window.innerWidth;
+    const desk = doc.querySelector('[data-desktop-nav]'); const mob = doc.querySelector('[data-mobile-btn]');
+    if (desk && mob) { if (w < 900) { desk.style.display = 'none'; mob.style.display = 'flex'; } else { desk.style.display = 'flex'; mob.style.display = 'none'; } }
+    doc.querySelectorAll('[data-detail-grid]').forEach(e => { e.style.gridTemplateColumns = w < 760 ? '1fr' : '1fr 1fr'; });
+    doc.querySelectorAll('[data-footer-grid]').forEach(e => { e.style.gridTemplateColumns = w < 700 ? '1fr 1fr' : '1.4fr 1fr 1fr 1.2fr'; });
+  };
+  toggleMobile = () => this.setState(s => ({ mobileOpen: !s.mobileOpen }));
+  renderVals() {
+    return {
+      mobileOpen: this.state.mobileOpen, toggleMobile: this.toggleMobile, navRef: this.navRef,
+      commodities: [
+        { isOil: true, short: 'SRO', name: 'Soybean Refined Oil', tag: 'Edible Oil', desc: 'Fully refined, deodorised soybean oil meeting edible-grade standards — supplied to households, hotels, and food manufacturers.', form: 'Refined edible oil', uses: 'Cooking, frying, food processing', basis: 'Bulk tankers & packed' },
+        { isOil: true, short: 'SDO', name: 'Soybean Degummed Oil', tag: 'Edible Oil', desc: 'Degummed soybean oil supplied to refineries as a clean feedstock for further refining into edible oil.', form: 'Semi-processed oil', uses: 'Refining feedstock', basis: 'Bulk / tanker lots' },
+        { isOil: true, short: 'CDSBO', name: 'Crude Degummed Soybean Oil', tag: 'Crude Oil', desc: 'Crude degummed soybean oil — the primary input for refiners — traded in large bulk and tanker quantities.', form: 'Crude oil', uses: 'Refining into edible oil', basis: 'Bulk / tanker lots' },
+        { isMeal: true, short: 'DOC', name: 'De-Oiled Cake', tag: 'Meal & Feed', desc: 'High-protein soybean meal left after solvent extraction — a staple ingredient in poultry and cattle feed.', form: 'Solvent-extracted meal', uses: 'Poultry & cattle feed', basis: 'Bagged / bulk' },
+        { isMeal: true, short: 'mustard cake', name: 'Mustard Deoiled Cake', tag: 'Meal & Feed', desc: 'Protein-rich mustard meal from solvent extraction — a cost-effective, widely used livestock feed.', form: 'Extracted meal', uses: 'Cattle feed, fertiliser', basis: 'Bagged / bulk' },
+        { isSeed: true, short: 'mustard seed', name: 'Mustard Seed (Sarso)', tag: 'Oilseed', desc: 'Premium mustard seed sourced from key producing mandis, traded by grade and oil content.', form: 'Raw oilseed', uses: 'Crushing for oil & cake', basis: 'By grade / oil %' },
+        { isMeal: true, short: 'mustard cake', name: 'Cake Sarso (Mustard Cake)', tag: 'Cake & Feed', desc: 'The protein-rich by-product of ghani / expeller crushing, valued as a nutritious cattle and poultry feed.', form: 'Expeller cake', uses: 'Cattle & poultry feed', basis: 'Bagged / bulk' },
+        { isOil: true, short: 'ghani oil', name: 'Kachi Ghani Mustard Oil', tag: 'Edible Oil', desc: 'Cold-pressed, pungent mustard oil made in the traditional ghani process — prized for its aroma and flavour.', form: 'Cold-pressed oil', uses: 'Cooking, tadka, pickling', basis: 'Packed / bulk' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
