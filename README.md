@@ -8,7 +8,7 @@ India). Trusted by the trade since 1993.
 
 | File | Page |
 | --- | --- |
-| `Ojas Oils & Tradelink - Home.html` | Home |
+| `Home.dc.html` | Home (served at `/`) |
 | `About.dc.html` | About |
 | `Commodities.dc.html` | Commodities |
 | `Why-Us.dc.html` | Why Us |
@@ -29,5 +29,11 @@ rather than opening files directly:
 ```bash
 # Python 3
 python -m http.server 8000
-# then open http://localhost:8000/Ojas%20Oils%20%26%20Tradelink%20-%20Home.html
+# then open http://localhost:8000/Home.dc.html
 ```
+
+## Deploying (Vercel / static hosts)
+
+This is a plain static site — no build step. `vercel.json` rewrites `/` to
+`/Home.dc.html` so the root URL serves the home page. The other pages are
+reachable directly (e.g. `/About.dc.html`).
